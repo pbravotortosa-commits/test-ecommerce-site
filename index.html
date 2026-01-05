@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Copilot Demo Store</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <!-- React 18 and Babel (for simple demo JSX transpilation in the browser) -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container nav">
+        <div class="brand"><span class="logo"></span> <span>Copilot Demo Store</span></div>
+        <div class="search">
+          <input id="searchInput" placeholder="Search products…" />
+          <button id="searchBtn" class="btn">Search</button>
+        </div>
+        <div class="cart">
+          <span id="cartCount" class="badge">0</span>
+          <button id="toggleCart" class="btn">Cart</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="container main">
+      <div id="app"></div>
+    </main>
+
+    <div id="cartPanel" class="cart-panel" style="display:none;">
+      <header>
+        <div class="container nav" style="padding:0;">
+          <strong>Cart</strong>
+          <button id="closeCart" class="btn">Close</button>
+        </div>
+      </header>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-summary">
+        <div style="display:flex; justify-content:space-between;">
+          <strong>Total</strong>
+          <strong id="cartTotal">€0.00</strong>
+        </div>
+        <button id="checkoutBtn" class="btn primary" style="width:100%; margin-top:12px;">Checkout</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">Demo only · No real payments · Built with React</div>
+    </footer>
+
+    <script type="text/babel" src="js/app.jsx"></script>
+  </body>
+</html>

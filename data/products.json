@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "price": 59.99,
+    "currency": "EUR",
+    "image": "assets/headphones.jpg",
+    "description": "Comfortable over\u2011ear wireless headphones with 20h battery life.",
+    "inventory": 12,
+    "tags": [
+      "audio",
+      "wireless"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Smartwatch",
+    "price": 129.0,
+    "currency": "EUR",
+    "image": "assets/smartwatch.jpg",
+    "description": "Fitness tracking, notifications, and 5\u2011day battery.",
+    "inventory": 7,
+    "tags": [
+      "wearable",
+      "fitness"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker",
+    "price": 39.5,
+    "currency": "EUR",
+    "image": "assets/speaker.jpg",
+    "description": "Portable speaker with deep bass and waterproof design.",
+    "inventory": 20,
+    "tags": [
+      "audio",
+      "portable"
+    ]
+  }
+]
