@@ -53,7 +53,7 @@ function App() {
       return [...prev, { id: product.id, name: product.name, price: product.price, image: product.image, qty: 1 }];
     });
     analytics.track("Product Added to the cart", {
-      product: "Product X",
+      product: "Product " + product.id,
     });	
   }
 
